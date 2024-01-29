@@ -16,5 +16,6 @@ keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
 
 -- save file leader + w LazyVim
+keymap.set("n", "<leader>W", ":w<CR>")
 
-keymap.set("n", "<leader>w", ":w<CR>")
+--comment with leader / LazyVim
