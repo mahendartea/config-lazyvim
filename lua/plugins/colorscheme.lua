@@ -18,16 +18,16 @@ return {
     priority = 1000,
     opts = function()
       return {
-        transparent = true,
+        transparent = false,
       }
     end,
   },
 
-  -- Configure LazyVim to load gruvbox
+  -- Configure LazyVim to load colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "solarized-osaka",
     },
   },
 }

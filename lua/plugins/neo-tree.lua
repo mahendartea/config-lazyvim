@@ -16,7 +16,7 @@ return {
             --            ["<C-o>"] = "open_nofocus", -- Cant use "L" since its used to go back to the code buffer
             ["<C-t>"] = { "show_help", nowait = false, config = { title = "Sort toggles", prefix_key = "t" } }, -- Mimic nnn dialog
             ["<C-x>"] = "cut_to_clipboard", -- Delete
-            --["H"] = "set_root",
+            ["H"] = "set_root",
             ["f"] = "show_file_details", -- File details
             ["h"] = "navigate_up",
             ["n"] = { "show_help", nowait = false, config = { title = "Create new", prefix_key = "n" } }, -- Mimic nnn dialog

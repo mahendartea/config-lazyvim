@@ -15,7 +15,17 @@ keymap.set("n", "<C-a>", "gg<S-v>G")
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
 
--- save file leader + w LazyVim
-keymap.set("n", "<leader>W", ":w<CR>")
+--replace words in file
+keymap.set("n", "<leader>rn", ":IncRename ")
 
---comment with leader / LazyVim
+keymap.set("n", "<A-k>", ":m .-2<cr>==") -- alt + j move line down
+keymap.set("n", "<A-j>", ":m .+1<cr>==")
+
+-- This file is automatically loaded by lazyvim.config.init
+local Util = require("lazyvim.util")
+
+local map = Util.safe_keymap_set
+
+-- save file leader + w LazyVim
+-- keymap.set("n", "<leader>w", ":w<CR>")
+map("n", "<leader>w", "<cmd>w<cr><esc>", { desc = "Save", remap = true })
